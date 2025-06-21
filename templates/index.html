@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block headersection %}
+
+<section class="header-container">
+  <img class="profile-image" src="static/assets/akash_image.jpg" alt="" />
+  <h1>Hello! I am Akash Zamnani</h1>
+
+  <div class="content-text">
+    <h2>App Developer And ML Engineer</h2>
+    <p>
+      Can create any kind of app, be it a web app, mobile app or desktop app. I can also create machine learning models and deploy them on the cloud.
+      I am Specialized in Flutter Development and Python Programming
+    </p>
+  </div>
+  <a href="#footer" class="btn btn-secondary">Connect With Me</a>
+</section>
+{% endblock %}
+
+{% block body %}
+<section id="projects" class="project-container container">
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2>Special Skills</h2>
+    <div class="container">
+      <table style="text-align: center;">
+        <tr>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <img src="static/assets/android.png" alt="" style="width: 50px; height: 50px;">
+              <h2><i class="fab fa-cogs"></i></h2>
+              <h4>Android App Development</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <img src="static/assets/IOS.png" alt="" style="width: 50px; height: 50px;">
+              <h2><i class="fab fa-bug"></i></h2>
+              <h4>IOS App Development</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <img src="static/assets/automation.png" alt="" style="width: 50px; height: 50px;">
+              <h2><i class="fab fa-code"></i></h2>
+              <h4>Automation Pipelines</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <img src="static/assets/machine_learning.png" alt="" style="width: 50px; height: 50px;">
+              <h2><i class="fab fa-server"></i></h2>
+              <h4>Machine Learning Models</h4>
+            </div>
+          </td>
+          <td  style="padding: 10px;">
+            <div class="textcard"  style="padding: 20px;">
+              <img src="static/assets/deep_learning.png" alt="" style="width: 50px; height: 50px;">
+              <h2><i class="fab fa-cloud"></i></h2>
+              <h4>Deep Learning Models</h4>
+            </div>
+          </td>
+         
+      </table>
+    </div>    
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects" class="project-container container">
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2>Popular Project</h2>
+    <p>Check out some of my projects</p>
+  </div>
+
+  <div class="container">
+    <div class="textcard">
+      <table>
+        <tr>
+          <td>
+            <img src="static/assets/student_project.jpeg"
+              alt="Pyhtools image" style="width: auto; max-width: 100%;">
+          </td>
+          <td>
+            <div class="container">
+              <h3>Student Attendance and Faculty Tracking System</h3>
+              <p style="text-align: justify;">This is a project which tracks college faculty , their in out timings , as well as automatically takes student attendance using classroom cameras. 
+                It uses DeepFace model to recognize face ,track and monitor faculty as well as students. 
+                This project is to be deployed and tested in college premises.</p>
+              <a href="https://github.com/akashzamnani05/teachertracking" class="btn btn-secondary">View Project <i class="fab fa-github"></i></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="container">
+    <div class="textcard">
+      <table>
+        <tr>
+          <td>
+            <img src="static/assets/Traffic_project.png"
+              alt="Pyhtools image" style="width: auto; max-width: 100%;">
+          </td>
+          <td>
+            <div class="container">
+              <h3>Traffic Management System Using Deep Learning</h3>
+              <p style="text-align: justify;">This project uses YOLOv8 , that is version 8 of a famous object detection model to detect various types of vehicles .
+                It predicts the green time in seconds for a signal , so as in that much time all the vehicles pass. 
+                It uses no of vehicles , time , day , road type etc as factors to give prediction</p>
+              <a href="https://github.com/akashzamnani05/teachertracking" class="btn btn-secondary">View Project <i class="fab fa-github"></i></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <a href="{{url_for('projects_page')}}" class="btn btn-secondary">See More <i class="fas fa-arrow-right"></i></a>
+</section>
+{% endblock %}
