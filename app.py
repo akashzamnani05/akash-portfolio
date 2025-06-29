@@ -1,6 +1,6 @@
 from datetime import datetime
 from flask import Flask, render_template, request
-from flask_sqlalchemy import SQLAlchemy
+
 from flask_migrate import Migrate, migrate
 
 
@@ -9,10 +9,10 @@ import re
 
 # create flask app
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
 
-# sqlite3 database
-db = SQLAlchemy(app)
+
+
+
 
 
 
